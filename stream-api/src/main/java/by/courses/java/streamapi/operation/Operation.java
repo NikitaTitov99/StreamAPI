@@ -21,4 +21,5 @@ public interface Operation<E extends UserBase> {
     Collection<E> addValueToAllNames(Collection<E> entities,String value);
 
     Collection<E> sortByNameThanByAge(Collection<E> entities);
+
 }
