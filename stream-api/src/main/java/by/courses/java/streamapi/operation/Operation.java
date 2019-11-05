@@ -22,4 +22,6 @@ public interface Operation<E extends UserBase> {
 
     Collection<E> sortByNameThanByAge(Collection<E> entities);
 
+    Collection<E> getAllElementsByTemplate(Collection<E> entities , E entiti );
+
 }

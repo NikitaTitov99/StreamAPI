@@ -38,7 +38,7 @@ public class DefaultStream implements Operation<UserBase> {
         return entities.stream().skip(1).limit(2).collect(Collectors.toList());
     }
 
-
+    @Override
     public Collection<UserBase> getAllElementsByTemplate(Collection<UserBase> entities, UserBase userBase) {
         return entities.stream().filter(temp -> temp.equals(userBase)).collect(Collectors.toList());
     }
